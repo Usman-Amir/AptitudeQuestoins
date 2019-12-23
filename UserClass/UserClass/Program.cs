@@ -25,4 +25,20 @@ namespace UserClass
             }
         }
     }
+
+    public class User
+    {
+        public User()
+        {
+        }
+        public void Add(string userName)
+        {
+           
+        }
+        public object GetUsersCount()
+        {
+            return null;
+        }
+    }
+
 }
