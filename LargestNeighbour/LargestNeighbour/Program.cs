@@ -32,6 +32,7 @@ namespace LargestNeighbour
                     FinalArray.Add(item);
                 }
             }
+            FinalArray.Sort();
 
             return 0;
         }
