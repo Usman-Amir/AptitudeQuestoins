@@ -39,5 +39,22 @@ namespace JohnTheRobot
                 return "cooking";
             }
         }
+        public class Humanoid
+        {
+            private string SkillSet;
+            public Humanoid()
+            {
+                SkillSet = "no skill is defined";
+            }
+            public Humanoid(ISkills Skills)
+            {
+                SkillSet = Skills.ShowSkills();
+            }
+
+            public virtual string ShowSkill()
+            {
+                return SkillSet;
+            }
+        }
     }
 }
