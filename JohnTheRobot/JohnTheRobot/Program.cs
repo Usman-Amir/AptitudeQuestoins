@@ -25,5 +25,19 @@ namespace JohnTheRobot
         {
             string ShowSkills();
         }
+        public class Dancing : ISkills
+        {
+            public string ShowSkills()
+            {
+                return "dancing";
+            }
+        }
+        public class Cooking : ISkills
+        {
+            public string ShowSkills()
+            {
+                return "cooking";
+            }
+        }
     }
 }
