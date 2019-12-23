@@ -16,6 +16,9 @@ namespace LargestNeighbour
 
         public  static int Challenge(int[] input)
         {
+            Dictionary<int, int> counts = input.GroupBy(x => x)
+                                          .ToDictionary(g => g.Key,
+                                                        g => g.Count());
             return 0;
         }
     }
