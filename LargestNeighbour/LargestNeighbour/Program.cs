@@ -10,6 +10,13 @@ namespace LargestNeighbour
     {
         static void Main(string[] args)
         {
+            int[] input = new int[] { 1, 6, 1, 2, 6, 1, 6, 6 };
+            int abc = Challenge(input);
+        }
+
+        private static int Challenge(int[] input)
+        {
+            return 0;
         }
     }
 }
