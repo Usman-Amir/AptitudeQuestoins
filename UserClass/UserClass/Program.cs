@@ -28,12 +28,15 @@ namespace UserClass
 
     public class User
     {
+        private static List<string> listOfUserName { get; set; }
         public User()
         {
+            if (listOfUserName == null)
+                listOfUserName = new List<string>();
         }
         public void Add(string userName)
         {
-           
+            listOfUserName.Add(userName);
         }
         public object GetUsersCount()
         {
