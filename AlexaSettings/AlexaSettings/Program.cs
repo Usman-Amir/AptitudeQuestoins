@@ -36,5 +36,9 @@ namespace AlexaSettings
         {
             GreetingMessage = "Hello, i am Alexa";
         }
+        public string Talk()
+        {
+            return GreetingMessage.Replace("{OwnerName}", OwnerName);
+        }
     }
 }
