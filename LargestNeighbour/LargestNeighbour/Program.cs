@@ -33,8 +33,7 @@ namespace LargestNeighbour
                 }
             }
             FinalArray.Sort();
-
-            return 0;
+            return printClosest(FinalArray.ToArray(), FinalArray.Count());
         }
         static int printClosest(int[] arr, int n)
         {
