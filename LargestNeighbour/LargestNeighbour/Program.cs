@@ -14,7 +14,7 @@ namespace LargestNeighbour
             int abc = Challenge(input);
         }
 
-        private static int Challenge(int[] input)
+        public  static int Challenge(int[] input)
         {
             return 0;
         }
