@@ -24,6 +24,15 @@ namespace LargestNeighbour
             var max = counts.Aggregate((l, r) => l.Value > r.Value ? l : r).Value;
             var min = max - 1;
 
+            var arrayWithMaxOccurances = counts.Where(x => x.Value >= min && x.Value <= max).Select(p => p.Key);
+            foreach (var item in input)
+            {
+                if (arrayWithMaxOccurances.Contains(item))
+                {
+                    FinalArray.Add(item);
+                }
+            }
+
             return 0;
         }
     }
