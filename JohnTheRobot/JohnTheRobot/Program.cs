@@ -20,5 +20,10 @@ namespace JohnTheRobot
             Console.WriteLine(bob.ShowSkill());//print no skill is defined
 
         }
+
+        public interface ISkills
+        {
+            string ShowSkills();
+        }
     }
 }
