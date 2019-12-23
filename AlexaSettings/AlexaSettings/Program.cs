@@ -40,5 +40,9 @@ namespace AlexaSettings
         {
             return GreetingMessage.Replace("{OwnerName}", OwnerName);
         }
+        public void Configure(Action<Alexa> alexa)
+        {
+            alexa.Invoke(this);
+        }
     }
 }
