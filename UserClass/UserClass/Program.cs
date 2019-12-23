@@ -40,7 +40,7 @@ namespace UserClass
         }
         public object GetUsersCount()
         {
-            return null;
+            return listOfUserName.Count;
         }
     }
 
