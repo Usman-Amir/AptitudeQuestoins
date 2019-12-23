@@ -1,14 +1,16 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using LargestNeighbour;
 
 namespace LargestNeighbourTest
 {
     [TestClass]
-    public class UnitTest1
+    public class SumOfLargestNeighbourTest
     {
         [TestMethod]
         public void TestMethod1()
         {
+
         }
     }
 }
