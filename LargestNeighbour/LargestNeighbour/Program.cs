@@ -19,6 +19,11 @@ namespace LargestNeighbour
             Dictionary<int, int> counts = input.GroupBy(x => x)
                                           .ToDictionary(g => g.Key,
                                                         g => g.Count());
+
+            List<int> FinalArray = new List<int>();
+            var max = counts.Aggregate((l, r) => l.Value > r.Value ? l : r).Value;
+            var min = max - 1;
+
             return 0;
         }
     }
