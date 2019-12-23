@@ -36,5 +36,24 @@ namespace LargestNeighbour
 
             return 0;
         }
+        static int printClosest(int[] arr, int n)
+        {
+
+            int firstMax = 0, secondMax = 0;
+
+            for (int i = 0; i < arr.Length; ++i)
+            {
+                if (arr[i] > firstMax)
+                {
+                    secondMax = firstMax;
+                    firstMax = arr[i];
+                }
+                else if (arr[i] > secondMax)
+                {
+                    secondMax = arr[i];
+                }
+            }
+            return (firstMax + secondMax);
+        }
     }
 }
