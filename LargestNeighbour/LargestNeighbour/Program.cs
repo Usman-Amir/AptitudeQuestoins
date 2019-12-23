@@ -10,11 +10,13 @@ namespace LargestNeighbour
     {
         static void Main(string[] args)
         {
+            Program p = new Program();
             int[] input = new int[] { 1, 6, 1, 2, 6, 1, 6, 6 };
-            int abc = Challenge(input);
+            int result = p.Challenge(input);
+            Console.WriteLine(result);
         }
 
-        public  static int Challenge(int[] input)
+        public int Challenge(int[] input)
         {
             Dictionary<int, int> counts = input.GroupBy(x => x)
                                           .ToDictionary(g => g.Key,
