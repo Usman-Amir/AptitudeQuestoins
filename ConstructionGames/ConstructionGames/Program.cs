@@ -30,6 +30,16 @@ namespace ConstructionGames
             listOfRooms.Add("balcony");
             return this;
         }
+        public Building Build()
+        {
+            houseDesc = string.Join(", ", listOfRooms);
+            return this;
+        }
+
+        public string Describe()
+        {
+            return houseDesc;
+        }
     }
         class Program
     {
