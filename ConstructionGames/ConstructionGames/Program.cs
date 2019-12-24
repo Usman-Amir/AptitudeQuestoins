@@ -20,6 +20,11 @@ namespace ConstructionGames
             listOfRooms.Add("kitchen");
             return this;
         }
+        public Building AddBedroom(string bedroomType)
+        {
+            listOfRooms.Add(bedroomType + " room");
+            return this;
+        }
     }
         class Program
     {
