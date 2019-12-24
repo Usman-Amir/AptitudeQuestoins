@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace ConstructionGames
 {
-    class Program
+    public class Building
+    {
+
+        public List<string> listOfRooms = new List<string>();
+        public string houseDesc;
+        public Building()
+        {
+
+        }
+    }
+        class Program
     {
         private static void Main(string[] args)
         {
