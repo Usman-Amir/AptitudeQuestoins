@@ -15,6 +15,11 @@ namespace ConstructionGames
         {
 
         }
+        public Building AddKitchen()
+        {
+            listOfRooms.Add("kitchen");
+            return this;
+        }
     }
         class Program
     {
