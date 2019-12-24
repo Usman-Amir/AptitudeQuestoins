@@ -25,6 +25,11 @@ namespace ConstructionGames
             listOfRooms.Add(bedroomType + " room");
             return this;
         }
+        public Building AddBalcony()
+        {
+            listOfRooms.Add("balcony");
+            return this;
+        }
     }
         class Program
     {
